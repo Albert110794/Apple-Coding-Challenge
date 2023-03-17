@@ -1,0 +1,8 @@
+<div class="forecast-container">
+  <h1>Get Your Weather Forecast</h1>
+  <%= form_tag(forecasts_path, method: :get) do %>
+    <%= label_tag(:address, "Enter your address:") %>
+    <%= text_field_tag(:address) %>
+    <%= submit_tag("Get forecast") %>
+  <% end %>
+</div>
